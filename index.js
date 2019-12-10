@@ -20,5 +20,5 @@ const changeBackground = function() {
 });
 }
 
-changeBackground();
+//changeBackground();
 
