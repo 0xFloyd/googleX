@@ -32,8 +32,27 @@ function amountscrolled() {
     var opacity = pctScrolled;
     console.log(pctScrolled + '% scrolled')
 
+    if (pctScrolled == 0) {
+        $(".fade-bg").css("background-color", "grey")
+    }
+
+    if (pctScrolled >= 20) {
+        $(".fade-bg").css("background-color", "red")
+    }
+
+    if (pctScrolled >= 40) {
+        $(".fade-bg").css("background-color", "blue")
+    }
+
+    if (pctScrolled >= 60) {
+        $(".fade-bg").css("background-color", "green")
+    }
+
+    if (pctScrolled >= 80) {
+        $(".fade-bg").css("background-color", "yellow")
+    }
     //$(".fade-bg").css("opacity", opacity);
-    $(".fade-bg").css("background-color", random_bg_color())
+    //$(".fade-bg").css("background-color", random_bg_color())
 }
 
 $(document).ready(function() {
