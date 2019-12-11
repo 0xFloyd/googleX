@@ -33,7 +33,6 @@ function amountscrolled() {
     console.log(pctScrolled + '% scrolled')
 
     //$(".fade-bg").css("opacity", opacity);
-  
     $(".fade-bg").css("background-color", random_bg_color())
 }
 
